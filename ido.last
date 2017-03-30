@@ -1,0 +1,33 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/sean/Documents/" . "notes/")
+ ("/Users/sean/" . "Documents/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/sean/.emacs.d/"
+ "/Users/sean/Documents/notes/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "config.org"
+ "shell.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/sean/.emacs.d/" (22748 13631 0 0) "themes/" "settings.org" "OLDinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "config.org~" "config.org" "config.el" "auto-save-list/" "ac-comphist.dat" ".tutor/" ".DS_Store" "../" "./")
+
+ ("/Users/sean/Documents/notes/" (22748 275 0 0) "workingTitle~" "Shell~" "shell.org~" "shell.org" "../" "./")
+
+ ("/Users/sean/Documents/" (22746 43023 0 0) "notes/" "musings/" ".localized" "../" "./")
+
+ ("/Users/sean/" (22748 9665 0 0) "Tut/" "Public/" "Proj/" "Pictures/" "Parallels/" "Music/" "Movies/" "Library/" "iCloud Drive (Archive)/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".nuget/" ".NERDTreeBookmarks" ".local/" ".emacs.d/" ".DS_Store" ".dotnet/" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
