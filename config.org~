@@ -31,9 +31,10 @@ I use the nord theme because while I'm fond of dark themes the gray and black th
   :init
   (if (display-graphic-p)
     (setq org-bullets-bullet-list '("◉" "◎" "⚫" "○" "►" "◇"))
-    (setq org-todo-keywords '((sequence "☛ TODO(t)" "⚑ WAITING(w)" "|" "✘ CANCELED(c)" "✔ DONE(d)"))))
+  )
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+  (setq org-todo-keywords '((sequence "☛ TODO(t)" "⚑ WAITING(w)" "|" "✘ CANCELED(c)" "✔ DONE(d)")))
 #+end_src
 * Evil-Mode
 The first lisp command is just to give TAB the ability to open header bullets in org-mode when in evil-mode.
@@ -61,19 +62,22 @@ The first lisp command is just to give TAB the ability to open header bullets in
 #+end_src
 * Custom binds
 #+begin_src emacs-lisp
-(menu-bar-mode -1)        ;; to remove the toolbar at the top
-(if (display-graphic-p)
-    (scroll-bar-mode -1)) ;; to remove the scrollbars in GUI mode
-(ido-mode t)              ;; for the scrolling buffer selection menu
+  (menu-bar-mode -1)        ;; to remove the toolbar at the top
+  (if (display-graphic-p)
+      (scroll-bar-mode -1)) ;; to remove the scrollbars in GUI mode
+  (ido-mode t)              ;; for the scrolling buffer selection menu
 
-;; Use shell-like backspace C-h, rebind help to F1
-(define-key key-translation-map [?\C-h] [?\C-?])
-(global-set-key (kbd "<f1>") 'help-command)
+  ;; Use shell-like backspace C-h, rebind help to F1
+  (define-key key-translation-map [?\C-h] [?\C-?])
+  (global-set-key (kbd "<f1>") 'help-command)
 
-;; A function to open the init file in current window
-(defun find-user-init-file ()
-  (interactive)
-  (find-file user-init-file))
+  ;; A function to open the init file in current window
+  (defun find-user-init-file ()
+    (interactive)
+    (find-file user-init-file))
 
-(global-relative-line-numbers-mode)
+  (setq python-shell-interpreter "/usr/local/bin/python3.6")
+
+
+  (global-relative-line-numbers-mode)
 #+end_src

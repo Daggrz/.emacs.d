@@ -26,13 +26,24 @@
 )
 :config
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
-(setq org-todo-keywords '((sequence "☛ TODO(t)" "⚑ WAITING(w)" "|" "✘ CANCELED(c)" "✔ DONE(d)")))
+(if (display-graphic-p)
+    (setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "✔ DONE(d)")
+                              (sequence "⚑ WAITING(w)" "|")
+                              (sequence "|" "✘ CANCELED(c)")))
+)
 
 (setq evil-want-C-i-jump nil)
+(setq evil-toggle-key "C-`")
 (require 'evil)
 (evil-mode 1)
 
-(evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
+(define-key evil-normal-state-map (kbd "E") 'end-of-line)
+(define-key evil-normal-state-map (kbd "B") 'beginning-of-line)
+(define-key evil-normal-state-map (kbd "j") '(kbd "gj")
+(define-key evil-normal-state-map (kbd "k") '(kbd "gk")
+(define-key evil-normal-state-map (kbd "h") '(kbd "gh")
+(define-key evil-normal-state-map (kbd "l") '(kbd "gl")
+(Evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
 (evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-enter)
 (evil-define-key 'normal neotree-mode-map (kbd "q") 'neotree-hide)
 (evil-define-key 'normal neotree-mode-map (kbd "RET") 'neotree-enter)
@@ -43,7 +54,7 @@
 (key-chord-define-global "ev" 'evil-mode)
 (key-chord-define-global "ag" 'org-agenda)
 (key-chord-define-global "bl" 'org-bullets-mode)
-(key-chord-define-global "nt" 'find-user-init-file)
+(key-chord-define-global ",e" 'find-user-init-file)
 (key-chord-define-global "fs" 'toggle-frame-fullscreen)
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
 
@@ -61,7 +72,7 @@
   (interactive)
   (find-file user-init-file))
 
-(setq python-shell-interpreter "/usr/local/bin/python3.6")
+(setq python-shell-interpreter "/usr/local/bin/python3")
 
 
 (global-relative-line-numbers-mode)
