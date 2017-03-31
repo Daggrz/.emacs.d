@@ -30,7 +30,9 @@
     (setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "✔ DONE(d)")
                               (sequence "⚑ WAITING(w)" "|")
                               (sequence "|" "✘ CANCELED(c)")))
-)
+  )
+(eval-after-load "org"
+  '(require 'ox-md nil t))
 
 (setq evil-want-C-i-jump nil)
 (setq evil-toggle-key "C-`")
@@ -51,7 +53,7 @@
 
 (require 'key-chord)
 (key-chord-mode 1)
-(key-chord-define-global "ev" 'evil-mode)
+(key-chord-define-global ",v" 'evil-mode)
 (key-chord-define-global "ag" 'org-agenda)
 (key-chord-define-global "bl" 'org-bullets-mode)
 (key-chord-define-global ",e" 'find-user-init-file)

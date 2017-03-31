@@ -38,7 +38,9 @@ I use the nord theme because while I'm fond of dark themes the gray and black th
       (setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "✔ DONE(d)")
                                 (sequence "⚑ WAITING(w)" "|")
                                 (sequence "|" "✘ CANCELED(c)")))
-  )
+    )
+  (eval-after-load "org"
+    '(require 'ox-md nil t))
 #+end_src
 * Evil-Mode
 The first lisp command is just to give TAB the ability to open header bullets in org-mode when in evil-mode.
@@ -64,7 +66,7 @@ The first lisp command is just to give TAB the ability to open header bullets in
 #+begin_src emacs-lisp
 (require 'key-chord)
 (key-chord-mode 1)
-(key-chord-define-global "ev" 'evil-mode)
+(key-chord-define-global ",v" 'evil-mode)
 (key-chord-define-global "ag" 'org-agenda)
 (key-chord-define-global "bl" 'org-bullets-mode)
 (key-chord-define-global ",e" 'find-user-init-file)
