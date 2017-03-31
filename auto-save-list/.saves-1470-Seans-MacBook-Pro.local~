@@ -1,2 +1,6 @@
+/Users/sean/.emacs.d/.gitignore
+/Users/sean/.emacs.d/#.gitignore#
+/Users/sean/.emacs.d/ido.last
+/Users/sean/.emacs.d/#ido.last#
 /Users/sean/.emacs.d/config.org
 /Users/sean/.emacs.d/#config.org#
