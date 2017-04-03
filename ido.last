@@ -14,11 +14,12 @@
  ("/Users/sean/Tut/pyTut/" . "beg/")
  ("/Users/sean/Proj/" . "pyProj/")
  ("/Users/sean/Documents/" . "notes/")
- ("/Users/sean/" . "Tut/")
+ ("/Users/sean/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/sean/.emacs.d/"
  "/Users/sean/Tut/emacs/test/"
  "/Users/sean/Tut/pyTut/beg/7/"
  "/Users/sean/Tut/pyTut/beg/6/"
@@ -26,7 +27,6 @@
  "/Users/sean/.emacs.d/elpa/python-0.25.2/"
  "/Users/sean/.emacs.d/elpa/python-mode-20170307.457/"
  "/Users/sean/Tut/c/cpp/"
- "/Users/sean/.emacs.d/"
  "/Users/sean/Tut/emacs/org/"
  "/Users/sean/Tut/emacs/cpp/"
  "/Users/sean/Proj/pyProj/"
@@ -35,6 +35,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "config.org"
  "main.cpp"
  "tut7.py"
  "myfile.txt"
@@ -44,18 +45,17 @@
  "python.el"
  "python.elc"
  "python-mode.el"
- "std_lip_facilities.h"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/sean/.emacs.d/" (22752 56386 0 0) "themes/" "snippets/" "semanticdb/" "README.md" "org-ebook.el" "OLDinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "ereader.el" "elpa/" "config.org~" "config.org_archive" "config.org" "config.el" "auto-save-list/" "ac-comphist.dat" ".tutor/" ".gitignore~" ".gitignore" ".git/" ".DS_Store" "../" "./")
+ ("/Users/sean/.emacs.d/" (22754 2909 0 0) "themes/" "snippets/" "semanticdb/" "README.md" "org-ebook.el" "OLDinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "ereader.el" "elpa/" "config.org~" "config.org_archive" "config.org" "config.el" "auto-save-list/" "ac-comphist.dat" ".tutor/" ".gitignore~" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/sean/" (22753 46676 0 0) "Tut/" "Public/" "Proj/" "Pictures/" "Parallels/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".python_history" ".nuget/" ".NERDTreeBookmarks" ".local/" ".emacs.d/" ".DS_Store" ".dotnet/" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" "../" "./")
 
  ("/Users/sean/.emacs.d/elpa/python-0.25.2/" (22752 52168 0 0) "pythonOG.el~" "pythonOG.el" "python.elc" "python.el" "python-pkg.el" "python-autoloads.el" "../" "./")
 
  ("/Users/sean/Tut/pyTut/beg/4/" (22752 52956 0 0) "tut4.py~" "tut4.py" "#tut4.py#" "../" "./")
-
- ("/Users/sean/" (22752 56650 0 0) "Tut/" "Public/" "Proj/" "Pictures/" "Parallels/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".python_history" ".nuget/" ".NERDTreeBookmarks" ".local/" ".emacs.d/" ".DS_Store" ".dotnet/" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" "../" "./")
 
  ("/Users/sean/Tut/pyTut/beg/7/" (22752 55574 0 0) "words.txt" "tut7.py~" "tut7.py" "myfile.txt~" "myfile.txt" "../" "./")
 

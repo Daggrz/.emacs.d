@@ -21,15 +21,17 @@
 (use-package org-bullets
 :ensure t
 :init
+(if (eq system-type 'darwin)
 (if (display-graphic-p)
-  (setq org-bullets-bullet-list '("◉" "◎" "⚫" "○" "►" "◇"))
-)
+  (setq org-bullets-bullet-list '("◉" "◎" "⚫" "○" "►" "◇"))))
 :config
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+
+(if (eq system-type 'darwin)
 (if (display-graphic-p)
     (setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "✔ DONE(d)")
                               (sequence "⚑ WAITING(w)" "|")
-                              (sequence "|" "✘ CANCELED(c)"))))
+                              (sequence "|" "✘ CANCELED(c)")))))
 (setq org-src-fontify-natively t)
 
 (setq evil-want-C-i-jump nil)
@@ -85,17 +87,11 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
-;;(setq split-height-threshold 0)  ;; To set functions that auto-create a split
-;;(setq split-width-threshold nil) ;; window to split them horizontally
-
-(menu-bar-mode -1)        ;; to remove the toolbar at the top
-
-(if (display-graphic-p)
-    (scroll-bar-mode -1)) ;; to remove the scrollbars in GUI mode
-(ido-mode t)              ;; for the scrolling buffer selection menu
-
-;; Rebind help to F1
-(global-set-key (kbd "<f1>") 'help-command)
+(defmacro with-system (type &rest body)
+  "Evaluate BODY if `system-type' equals TYPE."
+  (declare (indent defun))
+  `(when (eq system-type ',type)
+     ,@body))
 
 ;; A function to open the init file in split window
 (defun find-user-init-file ()
@@ -109,6 +105,18 @@
 (defun load-user-init-file()
   (interactive)
   (load-file user-init-file))
+
+;;(setq split-height-threshold 0)  ;; To set functions that auto-create a split
+;;(setq split-width-threshold nil) ;; window to split them horizontally
+
+(menu-bar-mode -1)        ;; to remove the toolbar at the top
+(show-paren-mode 1)       ;; to enable bracket highlights on point over
+(if (display-graphic-p)
+    (scroll-bar-mode -1)) ;; to remove the scrollbars in GUI mode
+(ido-mode t)              ;; for the scrolling buffer selection menu
+
+;; Rebind help to F1
+(global-set-key (kbd "<f1>") 'help-command)
 
 (setq python-shell-interpreter "/usr/local/bin/python3.6")
 

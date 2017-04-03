@@ -23,7 +23,6 @@ I use the nord theme because while I'm fond of dark themes the gray and black th
 * Neo-tree
 
 #+begin_src emacs-lisp
-
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 #+end_src
@@ -31,21 +30,22 @@ I use the nord theme because while I'm fond of dark themes the gray and black th
 * Org-mode
 
 #+begin_src emacs-lisp
-
   ;;setting up the org-bullets mode
   ;;and configuring todo keywords
   (use-package org-bullets
   :ensure t
   :init
+  (if (eq system-type 'darwin)
   (if (display-graphic-p)
-    (setq org-bullets-bullet-list '("◉" "◎" "⚫" "○" "►" "◇"))
-  )
+    (setq org-bullets-bullet-list '("◉" "◎" "⚫" "○" "►" "◇"))))
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+
+  (if (eq system-type 'darwin)
   (if (display-graphic-p)
       (setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "✔ DONE(d)")
                                 (sequence "⚑ WAITING(w)" "|")
-                                (sequence "|" "✘ CANCELED(c)"))))
+                                (sequence "|" "✘ CANCELED(c)")))))
   (setq org-src-fontify-natively t)
 #+end_src
   
@@ -126,22 +126,16 @@ The first lisp command is just to give TAB the ability to open header bullets in
   (require 'yasnippet)
   (yas-global-mode 1)
 #+end_src
+
+* Macros
+
+#+begin_src emacs-lisp 
+
+#+end_src
   
-* Custom binds and functions
+* Functions
 
-#+begin_src emacs-lisp
-  ;;(setq split-height-threshold 0)  ;; To set functions that auto-create a split
-  ;;(setq split-width-threshold nil) ;; window to split them horizontally
-
-  (menu-bar-mode -1)        ;; to remove the toolbar at the top
-
-  (if (display-graphic-p)
-      (scroll-bar-mode -1)) ;; to remove the scrollbars in GUI mode
-  (ido-mode t)              ;; for the scrolling buffer selection menu
-
-  ;; Rebind help to F1
-  (global-set-key (kbd "<f1>") 'help-command)
-
+#+begin_src emacs-lisp 
   ;; A function to open the init file in split window
   (defun find-user-init-file ()
     (interactive)
@@ -154,6 +148,23 @@ The first lisp command is just to give TAB the ability to open header bullets in
   (defun load-user-init-file()
     (interactive)
     (load-file user-init-file))
+
+#+end_src
+
+* Custom binds and functions
+
+#+begin_src emacs-lisp
+  ;;(setq split-height-threshold 0)  ;; To set functions that auto-create a split
+  ;;(setq split-width-threshold nil) ;; window to split them horizontally
+
+  (menu-bar-mode -1)        ;; to remove the toolbar at the top
+  (show-paren-mode 1)       ;; to enable bracket highlights on point over
+  (if (display-graphic-p)
+      (scroll-bar-mode -1)) ;; to remove the scrollbars in GUI mode
+  (ido-mode t)              ;; for the scrolling buffer selection menu
+
+  ;; Rebind help to F1
+  (global-set-key (kbd "<f1>") 'help-command)
 
   (setq python-shell-interpreter "/usr/local/bin/python3.6")
 
