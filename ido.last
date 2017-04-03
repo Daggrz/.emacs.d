@@ -2,35 +2,98 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/Users/sean/Tut/pyTut/beg/" . "4/")
+ ("/Users/sean/.emacs.d/elpa/" . "python-0.25.2/")
+ ("/Users/sean/.emacs.d/" . "elpa/")
+ ("/Users/sean/Tut/c/cpp/beg/" . "2/")
+ ("/Users/sean/Tut/c/" . "cpp/")
+ ("/Users/sean/Tut/emacs/" . "test/")
+ ("/Users/sean/Tut/" . "c/")
+ ("/Users/" . "sean/")
+ ("/" . "Users/")
+ ("/Users/sean/Tut/pyTut/beg/" . "7/")
  ("/Users/sean/Tut/pyTut/" . "beg/")
  ("/Users/sean/Proj/" . "pyProj/")
  ("/Users/sean/Documents/" . "notes/")
- ("/Users/sean/" . "Proj/")
+ ("/Users/sean/" . "Tut/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/sean/.emacs.d/"
+ "/Users/sean/Tut/emacs/test/"
+ "/Users/sean/Tut/pyTut/beg/7/"
+ "/Users/sean/Tut/pyTut/beg/6/"
  "/Users/sean/Tut/pyTut/beg/4/"
+ "/Users/sean/.emacs.d/elpa/python-0.25.2/"
+ "/Users/sean/.emacs.d/elpa/python-mode-20170307.457/"
+ "/Users/sean/Tut/c/cpp/"
+ "/Users/sean/.emacs.d/"
+ "/Users/sean/Tut/emacs/org/"
+ "/Users/sean/Tut/emacs/cpp/"
  "/Users/sean/Proj/pyProj/"
  "/Users/sean/Documents/notes/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "config.org"
+ "main.cpp"
+ "tut7.py"
+ "myfile.txt"
+ "words.txt"
+ "tut6.py"
  "tut4.py"
- "checkListGen.py"
- "TODO.csv"
- "shell.org"
+ "python.el"
+ "python.elc"
+ "python-mode.el"
+ "std_lip_facilities.h"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/sean/.emacs.d/" (22749 44269 0 0) "themes/" "settings.org" "OLDinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "config.org~" "config.org_archive" "config.org" "config.el" "auto-save-list/" "ac-comphist.dat" ".tutor/" ".git/" ".DS_Store" "../" "./")
+ ("/Users/sean/.emacs.d/" (22752 56386 0 0) "themes/" "snippets/" "semanticdb/" "README.md" "org-ebook.el" "OLDinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "ereader.el" "elpa/" "config.org~" "config.org_archive" "config.org" "config.el" "auto-save-list/" "ac-comphist.dat" ".tutor/" ".gitignore~" ".gitignore" ".git/" ".DS_Store" "../" "./")
 
- ("/Users/sean/Tut/pyTut/beg/4/" (22749 43844 0 0) "tut4.py" "../" "./")
+ ("/Users/sean/.emacs.d/elpa/python-0.25.2/" (22752 52168 0 0) "pythonOG.el~" "pythonOG.el" "python.elc" "python.el" "python-pkg.el" "python-autoloads.el" "../" "./")
+
+ ("/Users/sean/Tut/pyTut/beg/4/" (22752 52956 0 0) "tut4.py~" "tut4.py" "#tut4.py#" "../" "./")
+
+ ("/Users/sean/" (22752 56650 0 0) "Tut/" "Public/" "Proj/" "Pictures/" "Parallels/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".python_history" ".nuget/" ".NERDTreeBookmarks" ".local/" ".emacs.d/" ".DS_Store" ".dotnet/" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" "../" "./")
+
+ ("/Users/sean/Tut/pyTut/beg/7/" (22752 55574 0 0) "words.txt" "tut7.py~" "tut7.py" "myfile.txt~" "myfile.txt" "../" "./")
+
+ ("/Users/sean/Tut/pyTut/beg/6/" (22752 54930 0 0) "tut6.py~" "tut6.py" "../" "./")
+
+ ("/Users/sean/.emacs.d/elpa/python-mode-20170307.457/" (22752 51235 0 0) "python-mode.el~" "python-mode.elc" "python-mode.el" "python-mode-pkg.el" "python-mode-autoloads.el" "completion/" "../" "./")
+
+ ("/Users/sean/.emacs.d/elpa/" (22752 47614 0 0) "yasnippet-20170326.1030/" "with-editor-20170111.609/" "virtualenv-20140220.1501/" "use-package-readme.txt" "use-package-20170327.1449/" "undo-tree-20161012.701/" "s-20160928.636/" "relative-line-numbers-20161112.2151/" "python-mode-20170307.457/" "python-environment-20150310.153/" "python-0.25.2/" "projectile-20170309.30/" "powerline-evil-20151112.710/" "powerline-20161121.2320/" "popup-20160709.729/" "pkg-info-20150517.443/" "org-bullets-20140918.1137/" "org-beautify-theme-20161019.1524/" "neotree-20170227.1731/" "move-text-20170213.2128/" "magit-popup-20170308.146/" "magit-20170329.221/" "key-chord-20160227.438/" "jedi-core-20170121.610/" "jedi-20160425.2156/" "hardcore-mode-20151113.2301/" "goto-chg-20131228.659/" "git-commit-20170314.1414/" "git-20140128.241/" "flycheck-20170324.340/" "f-20161002.800/" "evil-tutor-20150102.2250/" "evil-leader-20140606.543/" "evil-20170306.334/" "epl-20150517.433/" "epc-20140609.2234/" "diminish-20151215.915/" "deferred-20161228.1930/" "dash-20170207.2056/" "cyberpunk-theme-20161012.1855/" "ctable-20140304.1659/" "concurrent-20161228.1930/" "bind-key-20161218.1520/" "auto-complete-clang-20140409.52/" "auto-complete-c-headers-20150911.2023/" "auto-complete-20170124.1845/" "async-20170219.942/" "archives/" ".DS_Store" "../" "./")
+
+ ("/Users/sean/Tut/c/cpp/" (22752 47173 0 0) "hello_world.cpp~" "beg/" "../" "./")
+
+ ("/Users/sean/Tut/c/cpp/beg/2/" (22752 47210 0 0) "../" "./")
+
+ ("/Users/sean/Tut/c/cpp/beg/" (22752 47210 0 0) "2/" "1/" "../" "./")
+
+ ("/Users/sean/Tut/c/cpp/beg/1/" (22752 47237 0 0) "helloWorld.cpp~" "helloWorld.cpp" "../" "./")
+
+ ("/Users/sean/Tut/emacs/test/" (22750 1077 0 0) "Makefile~" "Makefile" "main.py~" "main.py" "main.o" "main.cpp~" "main.cpp" "main" "fact.o" "fact.h" "fact.cpp~" "fact.cpp" "a.out" "../" "./")
+
+ ("/Users/sean/Tut/emacs/" (22749 64465 0 0) "test/" "orgMode.org~" "org/" "notes~" "notes.org~" "#notes.org#" "../" "./")
+
+ ("/Users/sean/Tut/c/" (22744 27711 0 0) "objC/" "cs/" "cpp/" "../" "./")
+
+ ("/Users/sean/.emacs.d/snippets/" (22749 62020 0 0) "yaml-mode/" "web-mode/" "udev-mode/" "typerex-mode/" "tuareg-mode/" "text-mode/" "sql-mode/" "snippet-mode/" "sh-mode/" "scala-mode/" "rust-mode/" "ruby-mode/" "rst-mode/" "rename_add_contr.py" "README.md" "python-mode/" "prog-mode/" "perl-mode/" "org-mode/" "octave-mode/" "nxml-mode/" "nsis-mode/" "nix-mode/" "nesc-mode/" "ned-mode/" "markdown-mode/" "malabar-mode/" "makefile-mode/" "makefile-gmake-mode/" "makefile-bsdmake-mode/" "makefile-automake-mode/" "m4-mode/" "lua-mode/" "lisp-mode/" "lisp-interaction-mode/" "LICENSE" "latex-mode/" "js3-mode/" "js2-mode/" "js-mode/" "java-mode/" "html-mode/" "haskell-mode/" "groovy-mode/" "go-mode/" "git-commit-mode/" "faust-mode/" "f90-mode/" "erlang-mode/" "erc-mode/" "ensime-mode/" "enh-ruby-mode/" "emacs-lisp-mode/" "elixir-mode/" "dix-mode/" "css-mode/" "csharp-mode/" "cpp-omnet-mode/" "cperl-mode/" "CONTRIBUTORS.txt" "conf-unix-mode/" "cmake-mode/" "clojure-mode/" "cider-repl-mode/" "chef-mode/" "cc-mode/" "c-mode/" "c++-mode/" "applescript-mode/" "antlr-mode/" ".nosearch" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/sean/.emacs.d/snippets/python-mode/" (22736 22994 0 0) "with_statement" "with" "while" "utf8" "unicode" "tryelse" "try" "trace" "test_file" "test_class" "super" "str" "static" "size" "setup" "setdef" "selfassign" "self_without_dot" "self" "script" "scls" "return" "repr" "reg" "prop" "print" "pl" "pass" "parser" "parse_args" "np" "not_impl" "method_docstring" "method" "metaclass" "main" "logging" "logger_name" "list" "lambda" "iter" "ipdbdebug" "interact" "init_docstring" "init" "import" "ifmain" "ife" "if" "function_docstring_numpy" "function_docstring" "function" "from" "for" "eq" "embed" "doctest" "doc" "django_test_class" "deftest" "dec" "cls" "classmethod" "celery_pdb" "assertTrue" "assertRaises.with" "assertRaises" "assertNotIn" "assertNotEqual" "assertIn" "assertFalse" "assertEqual" "assert" "arg_positional" "arg" "all" "__setitem__" "__new__" "__len__" "__getitem__" "__exit__" "__enter__" "__contains__" ".yas-setup.el" ".yas-parents" "../" "./")
+
+ ("/Users/sean/Tut/emacs/cpp/" (22749 64392 0 0) "main.cpp" "../" "./")
+
+ ("/Users/sean/Tut/emacs/org/" (22747 9758 0 0) "orgMode.org" "notes.org~" "notes.org" "notes" "../" "./")
+
+ ("/Users/sean/Tut/" (22745 34323 0 0) "pyTut/" "kRPC_Examples/" "jsTut/" "emacs/" "c/" ".DS_Store" "../" "./")
+
+ ("/Users/sean/Documents/notes/" (22749 5143 0 0) "workingTitle~" "Shell~" "shell.org~" "shell.org" "shell 2.org" "org.org~" "org.org" "../" "./")
+
+ ("/Users/sean/Proj/pyProj/" (22749 43127 0 0) "checkListGen.py~" "checkListGen.py" "../" "./")
+
+ ("/Users/" (22705 20157 0 0) "Shared/" "sean/" "Guest/" ".localized" "../" "./")
 
  ("/Users/sean/Tut/pyTut/" (22732 17905 0 0) "int/" "beg/" "../" "./")
 
@@ -38,13 +101,7 @@
 
  ("/Users/sean/Tut/pyTut/beg/3/" (22749 43770 0 0) "tut3.py~" "tut3.py" "../" "./")
 
- ("/Users/sean/Proj/pyProj/" (22749 40444 0 0) "TODO.csv" "Test.org" "checkListGen.py~" "checkListGen.py" "#checkListGen.py#" "../" "./")
-
  ("/Users/sean/Proj/" (22724 26167 0 0) "unityProj/" "pyProj/" "kRPC/" "jsProj/" "c/" ".DS_Store" "../" "./")
-
- ("/Users/sean/" (22749 40227 0 0) "Tut/" "Public/" "Proj/" "Pictures/" "Parallels/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".python_history" ".nuget/" ".NERDTreeBookmarks" ".local/" ".emacs.d/" ".DS_Store" ".dotnet/" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" "../" "./")
-
- ("/Users/sean/Documents/notes/" (22748 275 0 0) "workingTitle~" "Shell~" "shell.org~" "shell.org" "../" "./")
 
  ("/Users/sean/Documents/" (22746 43023 0 0) "notes/" "musings/" ".localized" "../" "./")
 )

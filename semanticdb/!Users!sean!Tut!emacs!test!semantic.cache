@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("fact.h" include nil nil [21 38])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [39 55])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [56 72])
+            ("main" function (:type "int") nil [74 214]))          
+      :file "main.cpp"
+      :pointmax 215
+      :fsize 214
+      :lastmodtime '(22750 1077 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "fact.h"
+      :fsize 17
+      :lastmodtime '(22749 65355 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("fact.h" include nil nil [1 18])
+            ("fact" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [28 34]))                  
+                :type "int")
+                nil [19 115]))          
+      :file "fact.cpp"
+      :pointmax 116
+      :fsize 115
+      :lastmodtime '(22749 65393 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!sean!Tut!emacs!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

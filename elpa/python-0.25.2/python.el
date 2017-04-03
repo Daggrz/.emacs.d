@@ -3310,14 +3310,17 @@ When a match is found, native completion is disabled."
      (regexp-opt python-shell-completion-native-disabled-interpreters)
      (file-name-nondirectory python-shell-interpreter))))
 
-(defun python-shell-completion-native-try ()
-  "Return non-nil if can trigger native completion."
-  (let ((python-shell-completion-native-enable t)
-        (python-shell-completion-native-output-timeout
-         python-shell-completion-native-try-output-timeout))
-    (python-shell-completion-native-get-completions
-     (get-buffer-process (current-buffer))
-     nil "")))
+;; A fix for the python 3 completion bug with Elpy
+
+(with-eval-after-load 'python
+  (defun python-shell-completion-native-try ()
+    "Return non-nil if can trigger native completion."
+    (let ((python-shell-completion-native-enable t)
+          (python-shell-completion-native-output-timeout
+           python-shell-completion-native-try-output-timeout))
+      (python-shell-completion-native-get-completions
+       (get-buffer-process (current-buffer))
+       nil "_"))))
 
 (defun python-shell-completion-native-setup ()
   "Try to setup native completion, return non-nil on success."

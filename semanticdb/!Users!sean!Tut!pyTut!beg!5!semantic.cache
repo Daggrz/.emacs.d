@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("getInt" function (:arguments 
+              ( ("prompt" variable nil (reparse-symbol function_parameters) [12 18]))              ) nil [1 71])
+            ("main" function nil nil [72 244])
+            ("if" code nil nil [245 283]))          
+      :file "tut5.py"
+      :pointmax 283
+      :fsize 282
+      :lastmodtime '(22752 54145 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!sean!Tut!pyTut!beg!5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
